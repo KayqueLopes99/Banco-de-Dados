@@ -1,0 +1,1 @@
+## Identifiquemos: Entidades, Possíveis Atributos, Relacionamentos e Regras de Negócio.
