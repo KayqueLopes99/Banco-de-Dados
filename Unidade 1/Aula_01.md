@@ -94,7 +94,7 @@ informações, pode acontecer redundância ou inconsistência.
 - Estrutura do banco de dados a partir da perspectiva dos usuários e do SGBD, sem considerar detalhes de implementação física. Define entidades, atributos, relacionamentos, tipos de dados e restrições, sendo expresso por meio de um modelo relacional (tabelas, colunas e chaves) Características Representa como os dados são organizados logicamente no SGBD.
 ![IMAGEM 2](image/image9.png)
 
-• Modelo Lógico
+• Modelo 
 - Representa a implementação concreta do banco de dados dentro de um SGBD específico. Ele descreve os detalhes técnicos de armazenamento, como estruturas de arquivos, índices, partições e métodos de acesso, com foco em desempenho, segurança e alocação de recursos. Características Representa como os dados são armazenados no sistema.
 ![IMAGEM 2](image/image10.png)
 
