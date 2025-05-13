@@ -1,39 +1,51 @@
+## Processo avaliativo:
+- Questões objetivas.
+- 1 Questão da atividade anterior
+- Modelo conceitual e textual.
+- Questões de conceito e definição do slide.
+- Racha Cuca - TREINO!
+
 ## Diagrama / Leitura - **Entidade-Relacionamento** (ER):
+- Para construção do Diagrama
+- Leitura: 1.Entidade, 2.relacionamento, 3.Cardinalidade. 
+- Escrita snake_case dos nomes dos atributos e etc.
+- Evite entidade associativa.
+- Em relacionamento pode exixtir pk artificial.
 
-```
-Entidade A - (1,N) --- <RELACIONA> ---- (1,N) --- Entidade B
-```
+- Não envolver regras de negocio no modelo conceitual. 
+- Entidade sem atributo não entra. 
+- Padrão id por entidade.
 
-- "Uma instância de **Entidade A** pode se relacionar com várias instâncias de **Entidade B**."
-- "Uma instância de **Entidade B** pode se relacionar com várias instâncias de **Entidade A**."
+Um Aluno (entidade) matricula-se (relacionamento) em Curso (entidade) com cardinalidade 1:N (um aluno pode se matricular em vários cursos, mas um curso pode ter vários alunos).
 
-### Exemplo:
+> Aluno - (1,n) --- <Matricula-se> --- (1,n) --- Curso
 
-Vamos imaginar um exemplo com **Aluno** e **Estágio**:
+> **1. Entidade** – **2. Relacionamento** – **3. Cardinalidade**
 
-- **Aluno (1, N) --- <Realiza> --- (1, N) --- Estágio**
-  
-Isso pode ser lido assim:
-- Cada **Aluno** pode ter **vários Estágios** (relacionamento de 1 para N).
-- Cada **Estágio** pode ser realizado por **vários Alunos** (relacionamento de 1 para N).
-
-Ou seja, um aluno pode realizar vários estágios, e um estágio pode envolver múltiplos alunos, dependendo do contexto do estágio.
-
-- **(1,N)** próximo a **Aluno** indica que **um aluno pode realizar vários estágios**.
-- **(1,N)** próximo a **Estágio** indica que **um estágio pode ter vários alunos**.
-
-
+---
 
 ### Exemplo:
+
 ```
-Aluno - (0, n) --- <Realiza> --- (1,n) --- Empréstimo
+Entidade A --- (1,1) <RELACIONA> (1,N) --- Entidade B
 ```
-> Isso quer dizer: 
 
-**Cada empréstimo N deve estar relacionado a exatamente 1 aluno**
+### Leitura correta no seu formato:
 
-**cada aluno pode ter feito 0 nenhum, um ou vários N empréstimos**.
+* Cada **Entidade A** está associada a **exatamente um ou vários** registros de **Entidade B**.
+* Cada **Entidade B** está associada a **um único** registro de **Entidade A**.
 
+---
 
-> "Cada instância da **Entidade A** participa de forma obrigatória e única do relacionamento, enquanto cada instância da **Entidade B** pode participar zero ou várias vezes."
+### Outro exemplo:
 
+```
+Aluno --- (1,N) <Matricula-se> (1,N) --- Curso
+```
+
+### Leitura:
+
+* Cada **Aluno** está associado a **um ou vários** registros de **Curso**.
+* Cada **Curso** está associado a **um ou vários** registros de **Aluno**.
+
+---
