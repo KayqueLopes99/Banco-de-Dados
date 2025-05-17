@@ -30,6 +30,14 @@ e monovalorados (um único valor por célula).
 - Tabelas devem evitar redundâncias.
 
 
+
+
+
+
+
+
+
+
 ---
 - Representação:
 ![IMAGEM 2](image/image32.png)
@@ -45,7 +53,7 @@ e monovalorados (um único valor por célula).
 - Chaves PK e FK e AK: As chaves garantem identificação única e relacionamentos entre tabelas.
 
 
-## Chave primária (PK)
+### Chave primária (PK)
 - É um atributo (ou conjunto de atributos) que *identifica* unicamente cada registro (linha) de uma tabela no banco de dados.
 
 - *Unicidade*: Não pode haver duas linhas com o mesmo valor na PK.
@@ -56,7 +64,7 @@ integridade referencial.
 
 Exemplo: Em uma tabela de clientes, o CPF pode ser a PK, pois é único para cada cliente.
 
-## Chave estrangeira (FK)
+### Chave estrangeira (FK)
 - É um atributo (ou conjunto de atributos) que *faz referência* à chave primária de outra tabela, estabelecendo um relacionamento entre as duas tabelas.
 
 - Se a chave primária (PK) **identifica** um item, a chave estrangeira (FK) **faz ligação** com esse item em outra tabela.
@@ -87,7 +95,7 @@ são.
 - Impede a alteração da PK se houver FKs dependentes.
 
 
-## Chave alternativa (AK)
+### Chave alternativa (AK)
 - É um atributo (ou conjunto de atributos) que pode ser usado como uma chave primária alternativa, ou seja, é uma chave candidata que não foi escolhida como PK.	
 
 + Características Técnicas
@@ -99,7 +107,7 @@ são.
 - Preservam Relacionamentos: FKs mantêm a consistência entre tabelas.
 - Otimizam Consultas: Chaves são indexadas.
 
-### Exemplos:
+#### Exemplos:
 ---
 ![IMAGEM 2](image/image34.png)
 ![IMAGEM 2](image/image35.png)
@@ -107,7 +115,7 @@ são.
 
 ---
 
-## Restrições de Integridade
+### Restrições de Integridade
 - Regras que garantem a consistência, precisão e confiabilidade dos dados em um banco de dados relacional. Elas são aplicadas pelo SGBD (Sistema de Gerenciamento de Banco de Dados) e classificam-se em quatro tipos principais:
 
 + *Integridade de Domínio*:
@@ -132,7 +140,7 @@ Características:
 - Garante que chaves estrangeiras (FK) referenciem apenas valores existentes na chave primária da tabela relacionada (ou sejam NULL).
 
 
-## **Esquema textual**:
+### **Esquema textual**:
 - Esquema textual, compacto para exemplos iniciais e
 organização de ideias.
 - Exemplo:
@@ -141,7 +149,7 @@ organização de ideias.
 
 ---
 
-## **Esquema Diagramatico**:
+### **Esquema Diagramatico**:
 - Representação gráfica do esquema textual, facilitando a visualização de entidades, atributos e relacionamentos.
 
 - Exemplo:
@@ -193,14 +201,11 @@ organização de ideias.
 ---
 ## *Tabela Própria*:
 - Note na imagem que o relacionamentp vai envolver as PKs das duas entidades, e o relacionamento entre elas, que é o que vai ser a chave primária da tabela de relacionamento.
-
 ---
 - Essa tradução ocorre quando as duas entidades relacionadas tem cardinalidade máxima n.
 ![IMAGEM 2](image/image43.png)
 
 ---
-
-
 + Regras:
 - Atributos identificadores do relacionamento devem se tornar PKs.
 - Atributos identificadores das entidades da relação devem se tornar FKs e PKs. Se não houver atributos identificador no relacionamento.

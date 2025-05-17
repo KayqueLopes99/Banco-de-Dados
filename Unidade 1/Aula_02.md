@@ -1,6 +1,6 @@
 ## Modelos de Dados
 ### Projeto de Banco de Dados
-- O projeto de banco de dados (ou database design) é um processo sistemático de definição da estrutura, organização, relações e restrições de um banco de dados.para atender a requisitos específicos de armazenamento, recuperação e manipulação eficiente de dados.
+- O projeto de banco de dados (ou database design) é um processo sistemático de definição da estrutura, organização, relações e restrições de um banco de dados para atender a requisitos específicos de armazenamento, recuperação e manipulação eficiente de dados.
 
 + *Integridade dos Dados*
 - Restrições de Domínio (tipos de dados, formatos).

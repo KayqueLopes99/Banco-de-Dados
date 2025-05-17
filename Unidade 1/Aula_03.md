@@ -1,8 +1,6 @@
 ## Modelo conceitual - Introdução à Entidades e Relacionamentos
 - Esta abordagem representa a estrutura lógica de um banco de dados através de *diagramas (DER)* que capturam entidades, seus atributos e os relacionamentos (com suas cardinalidades) entre elas.
 
-- Abordagem **entidade-relacionamento (ER)** é uma técnica de modelagem de dados que descreve a estrutura lógica de um banco de dados através de diagramas.
-
 ### Diagrama ER (DER) - Representação Gráfica
 - O DER contém de maneira estruturada, toda a abstração das relações entre o componentes citados anteriormente, a partir daqui, a complexidade dos mesmos irá aumentar a cada modificação. Focando em: 
 • Entidade: Pessoa, Aluno, Disciplina, Departamento. 
@@ -33,9 +31,10 @@ inclusive (ou não) de maneiras diferentes.
 ---
 ## Papeis:
 - O papel em um relacionamento define a função específica que uma ocorrência de entidade desempenha dentro de uma associação. Ele é usado para: 
-• Diferenciar o significado de cada participação de uma entidade em um relacionamento. 
 
-• Esclarecer a natureza da relação, especialmente em casos de autorrelacionamentos ou relacionamentos entre entidades semanticamente distintas. 
+- Diferenciar o significado de cada participação de uma entidade em um relacionamento. 
+
+- Esclarecer a natureza da relação, especialmente em casos de autorrelacionamentos ou relacionamentos entre entidades semanticamente distintas. 
 
 - Obrigatório em autorrelacionamentos opcional em relacionamentos “comuns”.
 
@@ -84,30 +83,31 @@ Indica se a participação no relacionamento é obrigatória (1) ou opcional (0)
 ![IMAGEM 2](image/image14.png)
 
 ---
-
-
 ## Relacionamentos Ternários
 
 Um relacionamento ternário é uma associação que envolve três entidades distintas simultaneamente.  
 
-- • **Associação Tripla:** Cada ocorrência do relacionamento liga uma ocorrência de cada uma das três entidades.
+- **Associação Tripla:** Cada ocorrência do relacionamento liga uma ocorrência de cada uma das três entidades.
 
-- • **Cardinalidade Específica:** A cardinalidade é analisada para pares de entidades em relação à terceira.
+- **Cardinalidade Específica:** A cardinalidade é analisada para pares de entidades em relação à terceira.
 
-- • **Não-Redutível:** Muitos relacionamentos ternários não podem ser decompostos em relacionamentos binários sem perda de significado.
+- **Não-Redutível:** Muitos relacionamentos ternários não podem ser decompostos em relacionamentos binários sem perda de significado.
 ---
 ![IMAGEM 2](image/image15.png)
-- L---emos por pares de entidades em relação à terceira.
 
-• (Cidade, Produto) → Distribuidor: (1,n)
+---
+
+- Lemos por pares de entidades em relação à terceira.
+
+- (Cidade, Produto) → Distribuidor: (1,n)
 Para um par Cidade+Produto, pode haver múltiplos
 distribuidores.
 
-• (Cidade, Distribuidor) → Produto: (0,n)
+- (Cidade, Distribuidor) → Produto: (0,n)
 Um Distribuidor em uma Cidade pode entregar nenhum
 ou vários produtos.
 
-• (Distribuidor, Produto) → Cidade: (1,n)
+- (Distribuidor, Produto) → Cidade: (1,n)
 Um Distribuidor+Produto atende pelo menos uma cidade.
 
 ## As entidades são compostas por:
@@ -116,7 +116,7 @@ descreve uma entidade ou relacionamento).
 - O domínio é o conjunto de valores válidos que um atributo pode assumir. Define o tipo de dado e as restrições de valores aceitáveis. (FLOAT, INT ...).
 
 --- 
-- Cardinalidade do Atributo: quantos valores um atributo pode ter para uma única ocorrência da entidade ou relacionamento.
+- **Cardinalidade** do Atributo: quantos valores um atributo pode ter para uma única ocorrência da entidade ou relacionamento.
 - Entidade CLIENTE, com atributos de nome, código e telefone, onde o telefone tem cardinalidade (0,N) ou Nenhum para Muitos, indicação que possuir 0 ou N números no modelo. Já nome e código, são monovalorados e obrigatórios (1,1).
 ---
 ![IMAGEM 2](image/image16.png)
@@ -143,8 +143,9 @@ descreve uma entidade ou relacionamento).
 ## Identificador de Relacionamentos
 - Conjunto de atributos e/ou entidades que determina unicamente uma ocorrência específica de um relacionamento.
 
-- A relação que se tem é de que a entidade dependente vai existir quando a entidade empregado existir, logo, sua unicidade se dá pelo seu número de sequência, atrelado ao código do empregado. Essa definição está explicita na linha destacada, indicando que o caminho se dá de empregado ---para dependente.
+- A relação que se tem é de que a entidade dependente vai existir quando a entidade empregado existir, logo, sua unicidade se dá pelo seu número de sequência, atrelado ao código do empregado. Essa definição está explicita na linha destacada, indicando que o caminho se dá de empregado para dependente.
 ![IMAGEM 2](image/image19.png)
+
 ---
 - Exemplo-Explicativo:
 - Nesse caso, a entidade principal é grupo, sendo empresa e filial, respectivamente, dependentes de grupo (de cima para baixo). Fazendo com que filial tenha os identificadores de empresa e grupo, e empresa tenha o identificador de grupo, além de seus próprios identificadores, claro.
@@ -188,7 +189,7 @@ Ex: Todo Cliente deve ser PessoaFisica ou PessoaJuridica.
 ![IMAGEM 2](image/image22.png)
 
 ---
-- *Parcial*: Ocorrências da superclasse podem nãopertencer a nenhuma subclasse Ex: Pessoa pode ser Cliente ou não.
+- *Parcial*: Ocorrências da superclasse podem não pertencer a nenhuma subclasse Ex: Pessoa pode ser Cliente ou não.
 
 ---
 ![IMAGEM 2](image/image23.png)

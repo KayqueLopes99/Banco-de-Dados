@@ -19,19 +19,20 @@ informações, pode acontecer redundância ou inconsistência.
 ### Como lidar com essa situação: 
 - Tecnicamente 
 - Recomendada é implementar mecanismos de compartilhamento estruturado de dados entre os sistemas. 
-- Didaticamente 
-- por meio do compartilhamento de dados entre os setores da organização. 
+- Didaticamente por meio do compartilhamento de dados entre os setores da organização. 
 - Compartilhamento eficiente de dados e integração entre os sistemas!
+---
 
 ![IMAGEM 2](image/image1.png)
 
+---
 - A solução para os desafios relacionados ao compartilhamento de dados entre diferentes setores de uma organização é a adoção de um sistema de banco de dados centralizado, que permita o acesso integrado, seguro e consistente às informações.
 
 
 ## Dados X Informação
-- Dados: São elementos brutos, desprovidos de contexto ou interpretação, que representam fatos, eventos ou medidas. Eles podem ser números, textos, sinais ou registros capturados e armazenados por sistemas computacionais, ainda sem tratamento ou análise.
+- *Dados*: São elementos brutos, desprovidos de contexto ou interpretação, que representam fatos, eventos ou medidas. Eles podem ser números, textos, sinais ou registros capturados e armazenados por sistemas computacionais, ainda sem tratamento ou análise.
 
-- Informações: É o resultado do processamento, organização e interpretação dos dados, atribuindo-lhes significado e utilidade no contexto em que são analisados. Trata-se de um conjunto de dados tratados que permite subsidiar decisões, gerar conhecimento ou apoiar processos organizacionais.
+- *Informações*: É o resultado do processamento, organização e interpretação dos dados, atribuindo-lhes significado e utilidade no contexto em que são analisados. Trata-se de um conjunto de dados tratados que permite subsidiar decisões, gerar conhecimento ou apoiar processos organizacionais.
 
 ![IMAGEM 2](image/image2.png)
 
@@ -44,7 +45,8 @@ informações, pode acontecer redundância ou inconsistência.
 
 - Vantagens 
 - Compartilhamento de Dados 
-• Permite acesso concorrente e controlado aos dados por múltiplos usuários e aplicações, garantindo consistência e evitando conflitos de escrita/leitura através de mecanismos como controle de concorrência e transações ACID
+
+- Permite acesso concorrente e controlado aos dados por múltiplos usuários e aplicações, garantindo consistência e evitando conflitos de escrita/leitura através de mecanismos como controle de concorrência e transações ACID
 
 - Segurança de Dados 
 • Oferece controle de acesso granular (ex.: permissões por usuário, roles) e técnicas de criptografia (dados em trânsito/repouso), além de auditoria (logs de acesso/modificação).
@@ -59,97 +61,47 @@ informações, pode acontecer redundância ou inconsistência.
 - Produtividade do Usuário Final
 
 ### Tipos de bancos de dados:
-- Podem ser baseados em: • Números de Usuários • Localização dos Dados • Uso dos Dados
+- Podem ser baseados em: 
+- Números de Usuários.
+- Localização dos Dados 
+- Uso dos Dados
 
-+ Numeros de usuários: 
+> Numeros de usuários: 
 - Monousuário - Definição: Projetado para acesso exclusivo por um único usuário por vez.
 - Multiusuário - Definição: Permite acesso simultâneo por múltiplos usuários, com controle de concorrência.
 ![IMAGEM 2](image/image4.png)
 
-+ Por localização dos dados
+> Por localização dos dados
 - Centralizado - Definição: Dados armazenados em um único servidor físico/lógico.
 - Distribuído - Definição: Dados fragmentados em múltiplos nós (físicos ou geográficos).
 
 ![IMAGEM 2](image/image5.png)
 
-+ Por Utilização dos Dados
+> Por Utilização dos Dados
 - Operacional (OLTP) - Definição: Otimizado para transações rápidas (INSERT/UPDATE/DELETE).
 
 - Data Warehouse (OLAP) - Definição: Focado em análise histórica e agregados.
 
 ![IMAGEM 2](image/image6.png)
 
-- Um Sistema de Banco de Dados (SBD) é um conjunto integrado de componentes que define, regula e gerencia a coleção, armazenamento, recuperação, manipulação e disseminação de dados em um ambiente computacional, garantindo:
+### Um Sistema de Banco de Dados (SBD)
+- É um conjunto integrado de componentes que define, regula e gerencia a coleção, armazenamento, recuperação, manipulação e disseminação de dados em um ambiente computacional, garantindo:
 
 ![IMAGEM 2](image/image7.png)
 
 - Um Modelo de Banco de Dados é um framework formal que define a estrutura, operações e restrições de um banco de dados, determinando como os dados são armazenados, organizados e manipulados.
 
 - Tipos de Modelos de Dados 
-• Modelo Conceitual
+> Modelo Conceitual
 - Representação abstrata e dos dados e seus relacionamentos, focada nas regras de negócio. Define o que o sistema deve armazenar, sem detalhes de implementação. Características Utilizaremos diagramas Entidade-Relacionamento (ER).
 
 ![IMAGEM 2](image/image8.png)
-• Modelo Físico
+
+> Modelo Lógico
 - Estrutura do banco de dados a partir da perspectiva dos usuários e do SGBD, sem considerar detalhes de implementação física. Define entidades, atributos, relacionamentos, tipos de dados e restrições, sendo expresso por meio de um modelo relacional (tabelas, colunas e chaves) Características Representa como os dados são organizados logicamente no SGBD.
 ![IMAGEM 2](image/image9.png)
 
-• Modelo 
+> Modelo Físico
 - Representa a implementação concreta do banco de dados dentro de um SGBD específico. Ele descreve os detalhes técnicos de armazenamento, como estruturas de arquivos, índices, partições e métodos de acesso, com foco em desempenho, segurança e alocação de recursos. Características Representa como os dados são armazenados no sistema.
 ![IMAGEM 2](image/image10.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
