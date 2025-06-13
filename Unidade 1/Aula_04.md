@@ -222,7 +222,7 @@ organização de ideias.
 - Atributos do relacionamento, se houver.
 
 
-## *Funsão de tabelas*
+## *Fusão de tabelas*
 - Quando o relacionamento entre duas entidades é 1:1, as duas entidades podem ser fundidas em uma única tabela.
 
 ---
