@@ -41,10 +41,8 @@ CodProj referencia Proj
 * 1. É criada uma tabela na 1FN referente à tabela não-normalizada e que contém apenas as colunas com valores atômicos, isto é, sem tabelas aninhadas. A chave primária da tabela 1FN é idêntica à chave da tabela não-normalizada;
 
 * 2. Para cada tabela aninhada, é criada uma tabela na 1FN composta pelas seguintes colunas:
-• A chave primária de cada uma das tabelas nas quais a tabela em
-questão está aninhada (também deve ser definida como chave
-estrangeira).
-• As colunas da própria tabela aninhada.
+- A chave primária de cada uma das tabelas nas quais a tabela em questão está aninhada (também deve ser definida como chave estrangeira).
+- As colunas da própria tabela aninhada.
 
 * 3. São definidas as chaves primárias das tabelas na 1FN que correspondem as tabelas aninhadas.
 
@@ -60,7 +58,6 @@ estrangeira).
 + 1. Utilizar a chave primária da tabela aninhada na forma ÑN;
 + 2. Verificar se esta chave primária é suficiente.
 • Caso seja suficiente, a chave primária da tabela na 1FN é a mesma que a da tabela aninhada na forma ÑN;
-
 • Caso contrário, deve-se determinar quais as demais colunas necessárias para identificar as linhas da tabela na 1FN.
 - A primeira forma normal (1FN) não admite repetições ou
 campos multivalorados.
