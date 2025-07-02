@@ -58,16 +58,16 @@ add column editora varchar(50) not null;
 
 -- 3)
 alter table GENERO_LIVRO
-modify column nomegenero varchar(100) not null;
+modify column nomeGenero varchar(100) not null;
 
 select * from GENERO_LIVRO;
 select * from LIVRO;
 
--- 4) Exclusão pot precaução
+-- 4) Exclusão por precaução
 drop table if exists ITEM_PEDIDO;
 
 -- 5)
-insert into GENERO_LIVRO (nomegenero) values
+insert into GENERO_LIVRO (nomeGenero) values
 ('Fantasia'),
 ('Terror'),
 ('Ficção Científica'),
@@ -100,9 +100,9 @@ update LIVRO
 set quantidadeEmEstoque = quantidadeEmEstoque + 5
 where anoPublicacao < 2020 and idGenero = (select idGenero from GENERO_LIVRO where nomeGenero = 'Ficção Científica');
 
--- 8)
-delete from genero_livro
-where nomegenero = 'Terror';
+-- 8) idGenero = 2 (Terror)
+delete from LIVRO where idGenero = 2; 
+delete from GENERO_LIVRO where idGenero = 2;
 
 select * from GENERO_LIVRO;
 select * from livro where idGenero = (select idgenero from GENERO_LIVRO where nomegenero = 'Ficção Científica');
